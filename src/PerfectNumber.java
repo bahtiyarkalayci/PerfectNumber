@@ -1,2 +1,30 @@
-package PACKAGE_NAME;public class PerfectNumber {
+import java.util.Scanner;
+
+public class PerfectNumber {
+
+    public static void main(String[] args) {
+         int number;
+         int total=0;
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("enter number");
+        number=scanner.nextInt();
+
+        for (int i=1;i<number;i++){
+
+            if (number%i==0) {
+               total+=i;
+
+            }
+
+        }
+   if (total==number){
+       System.out.println(number+" is a perfect number");
+           }
+   else {
+       System.out.println(number+" is not a perfect number");
+       }
+
+    }
 }
+
+
